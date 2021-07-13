@@ -138,8 +138,25 @@ body {
 /* -----------------------------------------------------
            Euro Final Match
  ----------------------------------------------------- */
-.team {
-    width: 900px;
+ /* .team {
+     position: relative;
+ } */
+ .team-image {
     margin: 0 auto;
-}
+    text-align: center;
+    background-image: linear-gradient(gray,black);
+    
 
+ }
+.team-image img {
+    width: 1000px;
+    
+}
+.about-team {
+    width: 500px;
+    color: white;
+    transform: translate(300px,-400px);
+}
+/* .about-team h1 {
+
+} */
