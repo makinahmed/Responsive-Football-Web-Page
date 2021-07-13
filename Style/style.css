@@ -1,0 +1,145 @@
+/* -----------------------------------------------------
+            goole fonts
+ ----------------------------------------------------- */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* -----------------------------------------------------
+            common styles and utilities 
+ ----------------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* -----------------------------------------------------
+            Banner Style 
+ ----------------------------------------------------- */
+
+.banner {
+    background-color: #2D25A0;
+    color: white;
+    height: 677px;
+    display: flex;
+    justify-content: space-around;
+}
+.banner-tittle {
+    width: 485px;
+    height: 230px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    margin-right: 102px;
+    transform : translate(156px,207px);
+}
+.banner-image {
+    margin-top: 153px;
+}
+.banner-image img{
+    width: 556.01px;
+    height: 438px;
+}
+.banner-image:hover img {
+    transform: skew(15deg);
+    transition: transform 2s ease-in-out;
+}
+.banner-tittle a:hover i{
+    transform: scaleX(1.5);
+}
+.banner-tittle a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    text-decoration: none;
+    color: white;
+}
+
+/* -----------------------------------------------------
+           Player profile style 
+ ----------------------------------------------------- */
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    margin: 70px 210px 165px 180px;
+}
+.player {
+    width: 300px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+.player-image img{
+    width: 100%;
+}
+.player-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+}
+.about-player {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+/* -----------------------------------------------------
+            Studium
+ ----------------------------------------------------- */
+.stadiums-container h1{
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+}
+ .stadiums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    height: 100%;
+    margin: 70px 210px 165px 180px;
+}
+.stadium {
+    width: 300px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    margin-top: 50px;
+    
+}
+.stadium-image img{
+    width: 100%;
+}
+.stadium-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+}
+.about-stadium {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+}
+/* -----------------------------------------------------
+           Euro Final Match
+ ----------------------------------------------------- */
+.team {
+    width: 900px;
+    margin: 0 auto;
+}
+
