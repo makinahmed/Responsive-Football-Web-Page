@@ -12,7 +12,7 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
-    /* overflow-x: hidden; */
+    margin-right: -150px;
 }
 
 
@@ -267,11 +267,11 @@ body {
     /* Our Sponsors
      */
      .our-sponsors{
-         width: 31.25em;
-         overflow-x: hidden;
+         width: 500px;
+        
      }
      .our-sponsors h1 {
-        font-size: 2.2em;
+        font-size: 34px;
         margin-left: -55px;
     }    
     .sponsors {
@@ -281,7 +281,7 @@ body {
     }
     .sponsor {
         width: 30%;
-        margin-bottom: 4.2em;
+        margin-bottom: 55px;
         margin-left: -115px;
     }
     .sponsor img {
