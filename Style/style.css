@@ -8,10 +8,11 @@
  ----------------------------------------------------- */
 *{
     margin: 0;
-    padding: 0;
+    padding: 0;   
 }
 body {
     font-family: 'Poppins', sans-serif;
+    /* overflow-x: hidden; */
 }
 
 
@@ -95,48 +96,24 @@ body {
 
 
 /* -----------------------------------------------------
-            Studium
+          Our Sponsors
  ----------------------------------------------------- */
-.stadiums-container {
-    margin-bottom: 0;
-}
- .stadiums-container h1{
-    text-align: center;
-    font-style: normal;
-    font-weight: bold;
+.our-sponsors h1 {
+
     font-size: 64px;
-    line-height: 80px;
-}
- .stadiums {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-between;
-    height: 100%;
-    margin: 70px 210px 165px 180px;
-}
-.stadium {
-    width: 300px;
-    background-color: #FFFFFF;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-    padding: 15px;
-    margin-top: 50px;
-}
-.stadium-image img{
-    width: 100%;
-}
-.stadium-name {
-    font-style: normal;
     font-weight: bold;
-    font-size: 28px;
-    line-height: 40px;
+    text-align: center;
 }
-.about-stadium {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 26px;
+.sponsors {
+    display: flex;
+    justify-content: space-evenly;
+   margin-bottom: 200px;
 }
+.sponsor img {
+   width: 200px;
+   height: 100px;
+}
+
 /* -----------------------------------------------------
            Euro Final Match
  ----------------------------------------------------- */
@@ -287,15 +264,28 @@ body {
         width: 100%;
     }
 
-    /* Stadiums 
+    /* Our Sponsors
      */
-    .stadiums {
-        height: 100%;
-        margin: 70px 10px 165px 10px;
+     .our-sponsors{
+         width: 31.25em;
+         overflow-x: hidden;
+     }
+     .our-sponsors h1 {
+        font-size: 2.2em;
+        margin-left: -55px;
+    }    
+    .sponsors {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-
-    .stadium{
-        width: 100%;
+    .sponsor {
+        width: 30%;
+        margin-bottom: 4.2em;
+        margin-left: -115px;
+    }
+    .sponsor img {
+       width: 100%;
     }
 
     /* Euro Final Match  */
@@ -343,5 +333,6 @@ body {
         width: 90%;
         height: 300px;
     }
+
 }
  
