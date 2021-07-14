@@ -249,6 +249,8 @@ body {
 
 
 @media screen and (max-width: 688px){
+
+    /* Banner  */
     .banner {
         width: 100%;
         display: flex;
@@ -272,6 +274,8 @@ body {
         width: 90%;
     }
 
+    /* Players  */
+
     .players { 
         overflow: hidden;
         display: flex;
@@ -282,6 +286,9 @@ body {
     .player {
         width: 100%;
     }
+
+    /* Stadiums 
+     */
     .stadiums {
         height: 100%;
         margin: 70px 10px 165px 10px;
@@ -290,6 +297,9 @@ body {
     .stadium{
         width: 100%;
     }
+
+    /* Euro Final Match  */
+
     .final-match-tittle {
         text-align: center;
         font-style: normal;
@@ -299,8 +309,6 @@ body {
         margin-bottom: 50px;
         margin-top: 0;
      }
-
-
      .final-match-tittle {
         text-align: center;
         font-style: normal;
@@ -324,10 +332,16 @@ body {
     .team:hover img {
         transform: scaleX(1);
     }
+
+    /* Footer  */
+    footer .footer-info {
+        margin: 0 auto;
+    }
+
     .footer-info {
-        margin: 8px 0px 63px 0px;
-        width: 100%;
-        height: 100px;
+        margin: 0px 0px 63px 10px;
+        width: 90%;
+        height: 300px;
     }
 }
  
