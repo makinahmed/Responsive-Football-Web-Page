@@ -169,6 +169,7 @@ body {
     top: 0;
     display: none;
     padding:0 5px;
+    height: 100%;
 }
 .team-details h1 {
     font-style: normal;
@@ -189,8 +190,10 @@ body {
     text-decoration: none;
     color: white;
 }
-.team:hover .team-details{
+.team:hover .team-info{
     background-color: rgb(223, 215, 215,.755);
+}
+.team:hover .team-details{
     color: black;
     display: block;
 }
@@ -235,105 +238,92 @@ body {
  /* -----------------------------------------------------
                     Media Query For Mobile
  ----------------------------------------------------- */
- @media screen and (max-width: 688px) {
+ 
+
+
+    
+
+
+@media screen and (max-width: 688px){
     body {
-        overflow-x: hidden;
+        overflow: hidden;
     }
-    main {
+    .banner {
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-    }
-    /* Banner */
-    
-    .banner {
-    flex-wrap: wrap;
     }
     .banner-tittle {
-        width: 300px;
+        transform: translate(15px,20px);
+        font-size: 30px;
+        width: 80%;
+    }
+    .banner-tittle p {
+        width: 80%;
+    }
+    
+    .banner-image img{
+        margin-top: -100px;
+        height: 80%;
+        width: 100%;
+    }
+
+    .players { 
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        margin:0;
+    }
+
+    .player {
+        width: 100%;
+    }
+    .stadiums {
+        height: 100%;
+        margin: 70px 10px 165px 10px;
+    }
+
+    .stadium{
+        width: 100%;
+    }
+    .final-match-tittle {
+        text-align: center;
         font-style: normal;
         font-weight: bold;
-        font-size: 36px;
-        line-height: 50px;
-        transform : translate(16px ,112px);
+        font-size: 64px;
+        line-height: 80px;
+        margin-bottom: 50px;
+        margin-top: 0;
+     }
+
+
+     .final-match-tittle {
+        text-align: center;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 80px;
+        margin-bottom: 50px;
+        margin-top: 0;
+     }   
+     .team {
+         width: 100%;
+         margin-bottom: 50px;
+        overflow: hidden;
+     }
+     .team img {
+         width: 100%;
+     }
+    .team:hover .team-info{
+       display: none;
     }
-    .banner-image img{
-        width: 329px;
-        height: 259.17px;
+    .team:hover img {
+        transform: scaleX(1);
     }
-        /* Player */
-
-.players {
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    margin: 12px 15px;
+    .footer-info {
+        margin: 8px 0px 63px 0px;
+        width: 100%;
+        height: 100px;
+    }
 }
-
-/* Top Stadiums */
-.stadiums-container {
-    height: 95%;
-}
-.stadiums-container h1 {
-    font-size: 44px;
-    text-align: center;
-}
-.stadiums {
-   display: grid;
-   grid-template-columns: repeat(1,1fr);
-   height: 100%;
-   margin: 0 0 15px 0;
-}
-.stadium{
-    margin: 10px,0;
-}
-/* Euro Final */
-.euro-final {
-    margin-top: 100px;
-}
-.euro-final h1 {
-    font-size: 35px;
-}
-.team {
-    height: 310px;
-    width: 350px; 
-    overflow: hidden;  
-    margin-bottom: 0px;
-}
-.team-details  {
-     position: absolute;
-     top: 0;
-     left: 0;
-     text-align: center;
-     height: 100%;
-     padding: 0 10px;
-     margin: 0 auto;
-     margin-bottom: 50px;
-}
-.team-details p,h1 {
-    width: 80%;
-    text-align: center;
-    line-height: 20px;
-    margin: 0 auto;
-}
-.team-details h1 {
-    line-height: 50px;
-}
-.team-details p {
-    margin-bottom:  30px;
-}
-  
-/* Footer  */
-.footer-info {
-    height: 180px;
-    margin: 54px 15px 18px 15px;
-    width: 95%;
-}
-.footer-image img {
-    width: 50%;
-    margin-left: 60px;
-}
-.footer-links,.footer-text {
-    text-align: center;
- }
-
- }
+ 

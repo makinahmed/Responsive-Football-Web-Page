@@ -1,0 +1,103 @@
+ @media screen and (max-width:) {
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /* Banner */
+    
+    .banner {
+        flex-wrap: wrap;
+        }
+        .banner-tittle {
+            width: 300px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 50px;
+            transform : translate(16px ,112px);
+        }
+        .banner-image img{
+            width: 329px;
+            height: 259.17px;
+        }
+            /* Player */
+    
+    .players {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: 12px 15px;
+    }
+    
+    /* Top Stadiums */
+    .stadiums-container {
+        height: 95%;
+    }
+    .stadiums-container h1 {
+        font-size: 44px;
+        text-align: center;
+    }
+    .stadiums {
+       display: grid;
+       grid-template-columns: repeat(1,1fr);
+       height: 100%;
+       margin: 0 0 15px 0;
+    }
+    .stadium{
+        margin: 10px,0;
+    }
+    /* Euro Final */
+    .euro-final {
+        margin-top: 100px;
+    }
+    .euro-final h1 {
+        font-size: 35px;
+    }
+    .team {
+        height: 310px;
+        width: 350px; 
+        overflow: hidden;  
+        margin-bottom: 0px;
+    }
+    .team-details  {
+         position: absolute;
+         top: 0;
+         left: 0;
+         text-align: center;
+         height: 100%;
+         padding: 0 10px;
+         margin: 0 auto;
+         margin-bottom: 50px;
+    }
+    .team-details p,h1 {
+        width: 80%;
+        text-align: center;
+        line-height: 20px;
+        margin: 0 auto;
+    }
+    .team-details h1 {
+        line-height: 50px;
+    }
+    .team-details p {
+        margin-bottom:  30px;
+    }
+      
+    /* Footer  */
+    .footer-info {
+        height: 180px;
+        margin: 54px 15px 18px 15px;
+        width: 95%;
+    }
+    .footer-image img {
+        width: 50%;
+        margin-left: 60px;
+    }
+    .footer-links,.footer-text {
+        text-align: center;
+     }
+     .banner {
+         display: none;
+     }
+    
+     }
