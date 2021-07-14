@@ -167,6 +167,7 @@ body {
 .team-details {
     position: absolute;
     top: 0;
+    left: -5px;
     display: none;
     padding:0 5px;
     height: 100%;
@@ -190,15 +191,21 @@ body {
     text-decoration: none;
     color: white;
 }
-.team:hover .team-info{
-    background-color: rgb(223, 215, 215,.755);
-}
 .team:hover .team-details{
     color: black;
     display: block;
+    height: 100%;
+    width: 100%;
+    
+}
+.team:hover .team-info{
+    background-color: rgb(223, 215, 215,.755);
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
 }
 .team:hover img {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: transform 5s;
     transition-timing-function: ease-in-out;
     overflow: hidden;
@@ -241,17 +248,12 @@ body {
  
 
 
-    
-
-
 @media screen and (max-width: 688px){
-    body {
-        overflow: hidden;
-    }
     .banner {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
+        overflow: hidden;
     }
     .banner-tittle {
         transform: translate(15px,20px);
@@ -309,10 +311,10 @@ body {
      .team {
          width: 100%;
          margin-bottom: 50px;
-        overflow: hidden;
+         overflow: hidden;
      }
      .team img {
-         width: 100%;
+         width: 90%;
      }
     .team:hover .team-info{
        display: none;
